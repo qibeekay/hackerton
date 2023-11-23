@@ -206,3 +206,8 @@ function updateCountAndProgressBar(valueChange = 1) {
 	const progressWidth = (countValue / totalSteps) * 100;
 	progressElement.style.width = `${progressWidth}%`;
 }
+
+function closeModal() {
+	// Add the 'hidden' class to hide the modal
+	document.querySelector('.body-head').classList.add('hide');
+}
